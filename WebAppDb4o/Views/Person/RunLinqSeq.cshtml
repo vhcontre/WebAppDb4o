@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "RunLinqSeq";
+}
+
+<h2>Ejecución Secuencial (poner valor 250)</h2>
+@using (Html.BeginForm())
+{
+    <input type="text" id="mbSize" name="mbSize"/>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Ejecutar Secuencial" class="btn btn-default" />
+        </div>
+    </div>
+    <br />
+    <span> El tiempo trascurrido es : @ViewBag.LinqTimeLabel</span><br/>
+    <span> @ViewBag.SpeedupLabel</span><br />
+
+}
+
